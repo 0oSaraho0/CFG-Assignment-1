@@ -6,3 +6,7 @@ body {
 header {
     height: 20vh;
 }
+
+.hide {
+    display: none;
+}

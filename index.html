@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     
     <title>Uniwash</title>
 </head>
@@ -13,14 +13,22 @@
         <h1 id="heading">Uni Wash</h1>
     </header>
     <!--Welcome container-->
-    <div id="container"></div>
+    <div id="container" class="hide">
         <p>Welcome to uni wash your local unicorn grooming center</p>
         <p>I can see you have a rather grubby unicorn to groom today.  Please pick from the services below</p>
     
         <button id="wash" class="service">Wash</button> 
         <button id="dry" class="service">Dry</button>
         <button id="groom" class="service">Groom</button>
+        <button id="continue" >Continue</button>
+        <div id="service-conf"></div>
+    </div>
 
+    <div id="groomingContainer" class="hide">
+        <p>Marvelous Lets get started</p>
+        <div>
+            <img src="assets/images/grubby-unicorn.png" alt="A picture of a purple unicorn covered in mud">
+        </div>
     </div>
 
 
@@ -28,10 +36,8 @@
 
 
 
-
-
 </body>
-<script src="script.js"></script>
+<script src="assets/js/script.js"></script>
 
 
 </html>
