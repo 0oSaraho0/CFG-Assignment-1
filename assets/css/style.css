@@ -10,3 +10,10 @@ header {
 .hide {
     display: none;
 }
+
+#grooming-container2{
+    max-width: 20rem;
+    border: solid 2px;
+    font-size: 92px;
+    text-align: center;
+}
