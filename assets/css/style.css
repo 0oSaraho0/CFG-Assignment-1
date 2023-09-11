@@ -1,12 +1,53 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Share+Tech+Mono&family=Short+Stack&display=swap');
+
+
+
 body {
-    /* display: flex;
-    justify-content: center; */
+    background-color: #f5abff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    font-family: 'Short Stack',sans-serif;
+
+
 }
 
-header {
+header {    
     height: 20vh;
+    margin: 0;
+    display: flex;
+    
 }
 
+#heading{
+    margin: 0;
+    margin: auto;
+    font-family:'Luckiest Guy', sans-serif;
+    font-size: 50px;
+
+    
+}
+
+#container{
+    text-align: center;
+
+}
+
+#grooming-container{
+    text-align: center;
+}
+
+#grooming-container2{
+    text-align: center;
+    margin: auto;
+}
+
+#img-uni{
+    margin: auto;
+}
 .hide {
     display: none;
 }
@@ -16,6 +57,7 @@ header {
     border: solid 2px;
     font-size: 92px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 #img-uni {
@@ -26,4 +68,27 @@ header {
     /* border: solid 2px; */
     font-size: 92px;
     text-align: center;
+}
+
+button{
+    background-color: fuchsia;
+    border-radius: 20%;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    margin: auto;
+    display: inline;
+    font-family: 'Short Stack',sans-serif;
+
+}
+
+button:hover {
+    background-color: fuchsia;
+    border-radius: 20%;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    margin: auto;
+    display: inline;
+    font-family: 'Short Stack',sans-serif;
 }
