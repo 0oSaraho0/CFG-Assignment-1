@@ -7,6 +7,10 @@ const chosenServices = [];
 const container = document.getElementById("container");
 const groomingContainer = document.getElementById("grooming-container");
 const groomingContainer2 = document.getElementById("grooming-container2");
+const ImgUni = document.getElementById("img-uni");
+
+const counterDisplay = document.getElementById("counter");
+
 const wash = document.getElementById("wash");
 const dry = document.getElementById("dry");
 const groom = document.getElementById("groom");
@@ -15,6 +19,9 @@ const serviceContainer = document.getElementById("service-conf");
 let textService = document.getElementById("service-confirmation");
 const wetUni = document.createElement("img");
 const washBtn = document.createElement("button");
+const dryBtn = document.createElement("button");
+const groomBtn = document.createElement("button");
+
 console.log(textService);
 
 console.log(wash);
@@ -67,12 +74,24 @@ function groomingTime() {
     document.body.appendChild(washBtn);
     let startWash = document.getElementById("startWash");
     startWash.addEventListener("click", washTime);
-    console.log(services)
+    console.log(services);
+  };
+  if (chosenServices.includes('dry')){
+    dryBtn.innerHTML = "Start Dry";
+    dryBtn.setAttribute("id", "startDry");
+    document.body.appendChild(dryBtn);
+    let startDry = document.getElementById("startdry");
+    startDry.addEventListener("click", dryTime);
+  };
+
+  if (chosenServices.includes('groom')){
+    groomBtn.innerHTML = "Start Groom";
+    groomBtn.setAttribute("id", "startGroom");
+    document.body.appendChild(groomBtn);
+    let startGroom = document.getElementById("startGroom");
+    startGroom.addEventListener("click", groomTime);
+};
 }
-
-  }
-  
-
 function washTime() {
   washBtn.remove();
   console.log("washing now");
@@ -80,9 +99,11 @@ function washTime() {
 }
 
 function finishWashing(){
-  
-  wetUni.src = "assets/images/wet-unicorn.jpeg";
-  let scr = document.getElementbyId("groomingContainer2")
+  // hide(groomingContainer);
+  // hide(timer);  
+  wetUni.src = "./assets/images/wet-unicorn.jpeg";
+  let scr = document.getElementById("grooming-container2")
+  counterDisplay.textContent = "";
   scr.appendChild(wetUni)
   console.log(wetUni)
 
@@ -90,13 +111,34 @@ function finishWashing(){
   finishWash.innerHTML = "Great she is all nice and clean";
   finishWash.setAttribute('id', 'finish-wash');
   document.body.appendChild(finishWash)
+
+    // }else if (chosenServices.includes('groom')){
+  //   groomTime();
+  // }else{
+  //   finishWash();
+  // }
   
 }
 
+function dryTime(){
+  console.log('test')
+}
+
+function groomTime(){
+  console.log('test')
+}
+
+// function finish(){
+//   console.log('test')
+// }
+
 function startCountdown(seconds) {
+  // hide(groomingContainer);
+  // hide(timer);
+  ImgUni.remove();
   let counter = seconds;
   const interval = setInterval(() => {
-    groomingContainer2.innerHTML = counter;
+    counterDisplay.textContent = counter;
     console.log(counter);
     counter--;
 
@@ -104,6 +146,7 @@ function startCountdown(seconds) {
       clearInterval(interval);
       if (chosenServices.includes('wash')){
         finishWashing();
+        
       }
       
 
@@ -111,4 +154,5 @@ function startCountdown(seconds) {
     }
   }, 1000);
 }
+
 

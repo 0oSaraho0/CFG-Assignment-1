@@ -17,3 +17,13 @@ header {
     font-size: 92px;
     text-align: center;
 }
+
+#img-uni {
+    max-height: 30vh;
+}
+
+#counter {
+    /* border: solid 2px; */
+    font-size: 92px;
+    text-align: center;
+}
