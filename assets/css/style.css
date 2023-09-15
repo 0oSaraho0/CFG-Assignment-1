@@ -1,9 +1,9 @@
 
-
+/* inport font styles*/
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Share+Tech+Mono&family=Short+Stack&display=swap');
 
 
-
+/* general styling for page*/
 body {
     background-color: #f5abff;
     margin: 0;
@@ -11,65 +11,56 @@ body {
     border: 0;
     text-align: center;
     font-family: 'Short Stack',sans-serif;
-
-
 }
-
+/* Header styling */
 header {    
     height: 20vh;
     margin: 0;
-    display: flex;
-    
+    display: flex; 
 }
 
+/* Title styling*/
 #heading{
     margin: 0;
     margin: auto;
     font-family:'Luckiest Guy', sans-serif;
     font-size: 50px;
-
-    
 }
 
-#container{
-    text-align: center;
-
-}
-
-#grooming-container{
+/* center containers*/
+#container #grooming-container{
     text-align: center;
 }
 
+/* center and stylecontent in grooming container 2*/ 
 #grooming-container2{
     text-align: center;
     margin: auto;
-}
-
-#img-uni{
-    margin: auto;
-}
-.hide {
-    display: none;
-}
-
-#grooming-container2{
     max-width: 20rem;
-    /* border: solid 2px; */
     font-size: 92px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-#img-uni {
+/* center image*/
+#img-uni{
+    margin: auto;
     max-height: 30vh;
 }
 
+/* hide containers with hide class*/
+.hide {
+    display: none;
+}
+
+/*Style counter*/
 #counter {
     /* border: solid 2px; */
     font-size: 92px;
     text-align: center;
 }
 
+/*Style buttons*/
 button{
     background-color: fuchsia;
     border-radius: 20%;
@@ -93,6 +84,7 @@ button:hover {
     font-family: 'Short Stack',sans-serif;
 }
 
+/* style text input from js*/
 #grooming-text {
     font-size: 20px;
 }
