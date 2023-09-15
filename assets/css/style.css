@@ -54,7 +54,7 @@ header {
 
 #grooming-container2{
     max-width: 20rem;
-    border: solid 2px;
+    /* border: solid 2px; */
     font-size: 92px;
     text-align: center;
     margin-bottom: 10px;
@@ -91,4 +91,8 @@ button:hover {
     margin: auto;
     display: inline;
     font-family: 'Short Stack',sans-serif;
+}
+
+#grooming-text {
+    font-size: 20px;
 }
