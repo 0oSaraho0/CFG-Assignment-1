@@ -150,7 +150,7 @@ function finishDry() {
 
   dryUni.src = "./assets/images/wind-blown-unicorn.png";
   dryUni.setAttribute("id", "dry-uni");
-  dryUni.style.maxHeight = "50vh";
+  dryUni.style.maxHeight = "40vh";
 
   counterDisplay.textContent = "";
   src.appendChild(dryUni);
