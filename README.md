@@ -122,7 +122,7 @@ console.log(CSS.createdBy.toUpperCase())
 // expected output  "HÃ¥KON WIUM LIE"
 ~~~
 
-#### Question 3
+### Question 3
 
 - Research 3 DOM events onmouseover and two of your choosing
 - Write a short answer and explain what each one of them does
