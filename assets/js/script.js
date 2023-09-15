@@ -178,7 +178,7 @@ function finishGroom() {
   const groomUni = document.createElement("img");
   groomUni.src = "./assets/images/clean-unicorn.jpeg";
   groomUni.setAttribute("id", "clean-uni");
-  groomUni.style.maxHeight = "50vh";
+  groomUni.style.maxHeight = "40vh";
   counterDisplay.textContent = "";
   src.appendChild(groomUni);
   console.log(groomUni);
